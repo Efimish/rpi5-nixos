@@ -1,0 +1,17 @@
+{
+  /* Включаем поддержку языкового сервера nixd */
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nixd",
+  "nix.serverSettings": {
+    "nixd": {
+      "formatting": {
+        "command": ["nixfmt"]
+      }
+    }
+  },
+
+  /* Настраиваем поведение редактора для файлов Nix */
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide",
+  }
+}
